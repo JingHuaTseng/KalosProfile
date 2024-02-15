@@ -4,58 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resume</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left-column {
+      flex: 0 0 30%; /* 左侧栏宽度占比 */
+      background-color: #ddd; /* 左侧栏背景颜色 */
+      padding: 20px;
+    }
+    .right-column {
+      flex: 0 0 70%; /* 右侧栏宽度占比 */
+      padding: 20px;
+    }
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+    p {
+      color: #666;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
-  <header>
-    <h1>John Doe</h1>
+  <div class="left-column">
+    <img src="avatar.jpg" alt="Avatar">
+  </div>
+  <div class="right-column">
+    <h2>John Doe</h2>
     <p>Web Developer</p>
-  </header>
-
-  <section class="section">
-    <h2>Education</h2>
-    <ul>
-      <li>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>XYZ University, Year</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <h3>Web Developer</h3>
-        <p>ABC Company, Year - Year</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </li>
-      <li>
-        <h3>Software Engineer Intern</h3>
-        <p>XYZ Inc., Year</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>PHP</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Contact</h2>
-    <p>Email: john@example.com</p>
-    <p>Phone: 123-456-7890</p>
-  </section>
+    <hr>
+    <h3>Education</h3>
+    <p>Bachelor of Science in Computer Science - XYZ University</p>
+    <hr>
+    <h3>Experience</h3>
+    <p>Web Developer at ABC Company</p>
+    <p>Software Engineer Intern at XYZ Inc.</p>
+    <hr>
+    <h3>Skills</h3>
+    <p>HTML, CSS, JavaScript, PHP</p>
+  </div>
 </div>
-	    <script src="scripts/main.js"></script>
+
 </body>
 </html>
